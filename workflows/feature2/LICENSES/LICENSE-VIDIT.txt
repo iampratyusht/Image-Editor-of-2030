@@ -1,0 +1,79 @@
+VIDIT - Virtual Image Dataset for Illumination Transfer
+=======================================================
+
+Copyright (c) 2020 EPFL - École polytechnique fédérale de Lausanne
+Image and Visual Representation Lab (IVRL)
+
+Source:
+- GitHub: https://github.com/majedelhelou/VIDIT
+- Hugging Face: https://huggingface.co/datasets/Nahrawy/VIDIT-Depth-ControlNet
+- Paper: https://arxiv.org/abs/2005.05460
+
+License: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+         (CC BY-NC-SA 4.0)
+
+License URL: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+================================================================================
+
+You are free to:
+
+- Share — copy and redistribute the material in any medium or format
+- Adapt — remix, transform, and build upon the material
+
+Under the following terms:
+
+- Attribution — You must give appropriate credit, provide a link to the license,
+  and indicate if changes were made. You may do so in any reasonable manner, but
+  not in any way that suggests the licensor endorses you or your use.
+
+- NonCommercial — You may not use the material for commercial purposes.
+
+- ShareAlike — If you remix, transform, or build upon the material, you must
+  distribute your contributions under the same license as the original.
+
+- No additional restrictions — You may not apply legal terms or technological
+  measures that legally restrict others from doing anything the license permits.
+
+================================================================================
+
+CITATION:
+
+If you use this dataset in your research, please cite:
+
+@inproceedings{helou2020vidit,
+  title={VIDIT: Virtual Image Dataset for Illumination Transfer},
+  author={El Helou, Majed and Zhou, Ruofan and Barthas, Johan and S{\"u}sstrunk, Sabine},
+  booktitle={arXiv preprint arXiv:2005.05460},
+  year={2020}
+}
+
+================================================================================
+
+DATASET DESCRIPTION:
+
+VIDIT (Virtual Image Dataset for Illumination Transfer) is a synthetic dataset
+designed for relighting and illumination transfer tasks. It contains:
+
+- 300 virtual scenes rendered in Unreal Engine
+- 8 light directions: N, S, E, W, NE, NW, SE, SW
+- 5 color temperatures: 2500K, 3500K, 4500K, 5500K, 6500K
+- Ground truth depth maps
+- Total: 300 × 8 × 5 = 12,000 images
+
+The Hugging Face version (Nahrawy/VIDIT-Depth-ControlNet) includes:
+- scene: Scene identifier
+- image: RGB image (PIL)
+- depth_map: Depth map (PIL)
+- direction: Light direction string (N, S, E, W, NE, NW, SE, SW)
+- temperature: Color temperature
+- caption: Text description
+
+================================================================================
+
+AUTHORS:
+
+Majed El Helou, Ruofan Zhou, Johan Barthas, Sabine Süsstrunk
+EPFL - École polytechnique fédérale de Lausanne
+Image and Visual Representation Lab (IVRL)
+https://www.epfl.ch/labs/ivrl/
